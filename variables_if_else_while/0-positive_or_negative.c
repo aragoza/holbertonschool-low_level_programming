@@ -2,7 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - main function is used to take in other function or conditioners*/
+/**
+ * main - main function is used to take in other function or conditioners
+ */
 int main(void)
 {
 	int n;
