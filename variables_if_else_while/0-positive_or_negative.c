@@ -4,6 +4,8 @@
 
 /**
  * main - main function is used to take in other function or conditioners
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
