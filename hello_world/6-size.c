@@ -4,16 +4,14 @@
 /**
  * main - Entry point
  * printf - print what is between ()
- * sizeof - is a function that count the nmbr of bytes in the type of the element
+ * sizeof - count the nmbr of bytes in the type of the element
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-        printf(sizeof(char));
-        printf(sizeof(int));
-        printf(sizeof(long int));
-        printf(sizeof(long long int));
-        printf(sizeof(float));
+	printf("Size of int: %u bytes\n", sizeof(int));
+	printf("Size of double: %u bytes\n", sizeof(double));
+	printf("Size of float: %u bytes\n", sizeof(float));
+	printf("Size of char: %u bytes\n", sizeof(char));
 	return (0);
 }
