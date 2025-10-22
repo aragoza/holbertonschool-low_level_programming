@@ -2,9 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes there */
+/**
 
-/* betty style doc for function main goes there */
+ * using the condition if to make conditon to print different results
+
+*/
 
 int main(void)
 {
