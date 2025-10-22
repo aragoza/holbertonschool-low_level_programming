@@ -2,11 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/**
-
- * using the condition if to make conditon to print different results
-
-*/
+/* using the condition if to make conditon to print different results*/
 
 int main(void)
 {
