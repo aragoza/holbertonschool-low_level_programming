@@ -2,9 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - main is the function that take in other function*/
-/* using the condition if to make conditon to print different results*/
-
+/* main - main function is used to take in other function or conditioners*/
 int main(void)
 {
 	int n;
