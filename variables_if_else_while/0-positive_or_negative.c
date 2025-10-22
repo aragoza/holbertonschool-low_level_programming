@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
+/* main is the function that take in other function
 /* using the condition if to make conditon to print different results*/
 
 int main(void)
