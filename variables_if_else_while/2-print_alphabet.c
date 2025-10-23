@@ -10,7 +10,7 @@ int main(void)
 {
 	char ch = 'a';
 
-	while(ch!='{')
+	while (ch != '{')
 	{
 		putchar(ch);
 		ch++;
@@ -18,5 +18,5 @@ int main(void)
 
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
