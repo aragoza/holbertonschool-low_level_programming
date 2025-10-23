@@ -14,9 +14,11 @@ int main(void)
 
 	while (i < 10)
 	{
-		printf("%i\n", i);
+		printf("%i", i);
 		i++;
 	}
+
+	putchar('\n');
 
 
 	return (0);
