@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <main.h>
+
 /**
  * main - main function is a prototype
  *
