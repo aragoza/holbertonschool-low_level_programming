@@ -10,13 +10,11 @@
 
 int main(void)
 {
-	int i = 0x0;
+	int i = 0;
+	char c[] = "123456789abcdef";
 
-	while (i <= 0xf)
-	{
-		printf("%x", i);
-		i++;
-	}
+	for (int i = 0;i < 16;i++)
+		putchar(c[i]);
 
 	putchar('\n');
 
