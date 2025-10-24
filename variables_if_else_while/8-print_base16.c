@@ -10,7 +10,6 @@
 
 int main(void)
 {
-	int i = 0;
 	char c[] = "123456789abcdef";
 
 	for (int i = 0;i < 16;i++)
