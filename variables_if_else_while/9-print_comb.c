@@ -18,8 +18,8 @@ int main(void)
 		putchar(diz);
 		if (diz <= 56)
 		{
-			putchar(' ');
 			putchar(',');
+			putchar(' ');
 		}
 	}
 
