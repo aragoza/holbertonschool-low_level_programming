@@ -16,10 +16,10 @@ int main(void)
 
 	for (diz = 48; diz <= 57; diz++)
 	{
-		for (unit = 48; unit <= 57; unit++)
+		putchar(diz);
+		if (diz <=56)
 		{
-			putchar(diz);
-			putchar(unit);
+			putchar(' ');
 			putchar(',');
 		}
 	}
