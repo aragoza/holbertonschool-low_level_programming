@@ -3,7 +3,7 @@
 /**
  * print_last_digit - print the last digit of a number n
  *
- * @n - int parameter
+ * @n: int parameter
  *
  * Return: n in absolute value of the last digit
  */
