@@ -5,7 +5,7 @@
  *
  * Return: (1) means c is in lowercase (0) if not
  *
- * parameter 'c' - is an int parameter
+ * @c: only one parameter
  */
 
 
