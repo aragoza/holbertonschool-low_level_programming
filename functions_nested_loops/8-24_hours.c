@@ -26,19 +26,14 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(dizmin);
 					_putchar(unimin);
-					if ((dizh != '2') | (unih != '4') | (dizmin != '5') | (unimin != '9'))
-					{
-						_putchar('\n');
-					}
+					_putchar('\n');
 				}
 			}
 		}
 	}
-
-
 	for (dizh = '2'; dizh <= '2'; dizh++)
         {
-                for (unih = '0'; unih <= '4'; unih++)
+                for (unih = '0'; unih <= '3'; unih++)
                 {
                         for (dizmin = '0'; dizmin <= '5'; dizmin++)
                         {
