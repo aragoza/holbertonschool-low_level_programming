@@ -1,17 +1,18 @@
 #include "main.h"
 
 /**
- * main - take in the other function
+ * print_alphabet - print the alphabet
  *
- * print_alphabet - print the alphabet and is declare in main.h
- *
- * Return: always (0)
+ * no return because of void for the output
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet(); /** call the function describe in print_alphabet.c*/
-	_putchar('\n');
+    char c;
 
-	return (0);
+    for (c = 'a'; c <= 'z'; c++)
+    {
+        _putchar(c);
+    }
+    _putchar('\n');
 }
