@@ -7,7 +7,7 @@
  */
 
 
-int _islower(int c) /*x* c - is an int parameter that check the char by translating in int */
+int _islower(int c) /*x* c - is an int parameter */
 {
 
 	if (('a' <= c) && (c <= 'z'))
