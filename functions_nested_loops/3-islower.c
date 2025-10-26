@@ -7,7 +7,7 @@
  */
 
 
-int _islower(int c) /*x* c - is an int parameter */
+int _islower(int c) /** @c - is an int parameter */
 {
 
 	if (('a' <= c) && (c <= 'z'))
