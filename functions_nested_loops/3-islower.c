@@ -4,10 +4,12 @@
  * _islower - function that says if c i in lowercase
  *
  * Return: (1) means c is in lowercase (0) if not
+ *
+ * parameter 'c' - is an int parameter
  */
 
 
-int _islower(int c) /** @c - is an int parameter */
+int _islower(int c)
 {
 
 	if (('a' <= c) && (c <= 'z'))
