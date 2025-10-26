@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * jack_bauer - print all the time in a day
  *
@@ -8,49 +7,18 @@
 
 void jack_bauer(void)
 {
-	char dizh;
-	char unih;
-	char dizmin;
-	char unimin;
+	int h, min;
 
-	for (dizh = '0'; dizh <= '1'; dizh++)
+	for (h = 0; h < 24; h++)
 	{
-		for (unih = '0'; unih <= '9'; unih++)
+		for (min = 0; min < 60; min++)
 		{
-			for (dizmin = '0'; dizmin <= '5'; dizmin++)
-			{
-				for (unimin = '0'; unimin <= '9'; unimin++)
-				{
-					_putchar(dizh);
-					_putchar(unih);
-					_putchar(':');
-					_putchar(dizmin);
-					_putchar(unimin);
-					_putchar('\n');
-				}
-			}
-		}
-	}
-	for (dizh = '2'; dizh <= '2'; dizh++)
-	{
-		for (unih = '0'; unih <= '3'; unih++)
-		{
-			for (dizmin = '0'; dizmin <= '5'; dizmin++)
-			{
-				for (unimin = '0'; unimin <= '9'; unimin++)
-				{
-					_putchar(dizh);
-					_putchar(unih);
-					_putchar(':');
-					_putchar(dizmin);
-					_putchar(unimin);
-
-					if ((dizh != '2') | (unih != '4') | (dizmin != '5') | (unimin != '9'))
-					{
-						_putchar('\n');
-					}
-				}
-			}
+			_putchar('0' + h / 10);
+			_putchar('0' + h % 10);
+			_putchar(':');
+			_putchar('0' + min / 10);
+			_putchar('0' + min % 10);
+			_putchar('\n');
 		}
 	}
 }
