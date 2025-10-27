@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - function that says if c i in lowercase
+ * _isupper - function that says if c i in uppercase
  *
  * Return: (1) means c is in uppercase (0) if not
  *
