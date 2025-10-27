@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - print all the time in a day
+ * times_table - print the multiplication table
  *
  * no return because of void
  */
