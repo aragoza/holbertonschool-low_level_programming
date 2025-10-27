@@ -1,6 +1,10 @@
 #include "main.h"
 /**
- * int add(int, int) - add two numbers
+ * add - add two numbers
+ *
+ * @n1: frist number
+ *
+ * @n2: second number
  *
  * Return: the addition n3
  */
