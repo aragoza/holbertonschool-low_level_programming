@@ -29,7 +29,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (j = 0; j <= (i / 2); j++)
+		for (j = 1; j <= (i / 2); j++)
 		{
 			if (*(str + (i / 2) + j) != '\0')
 			{
