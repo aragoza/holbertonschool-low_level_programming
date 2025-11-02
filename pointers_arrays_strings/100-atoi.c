@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atoi - change type of a char into an int (output the first number in the string)
+ * _atoi - change type of a char into an int (output the first number)
  *
  * @s: string
  *
