@@ -12,7 +12,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int sign = 1; /** siggn of the number */
-	int n = 0; /** ending result */
+	unsigned int n = 0; /** ending result */
 	int started = 0; /** check for the beeginning of a number */
 
 	while (*(s + i) != '\0')
