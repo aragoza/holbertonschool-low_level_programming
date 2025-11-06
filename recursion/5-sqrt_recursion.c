@@ -3,11 +3,7 @@
 /**
  * _sqrt_recursion - make square root of n
  *
- * stat_i - search the root i of n
- *
  * @n: int will be square root
- *
- * @i: the result square root if it exists
  *
  * Return: (i) the square root (-1) if there is no sqrt or n negative and 0 for 0
  */
