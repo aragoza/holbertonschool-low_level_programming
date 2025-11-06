@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * factorial - make n to the factorial
+ * _pow_recursion - make x to the power of y
  *
- * @n: int will be to the factorial
+ * @x: int will be to the power of y
  *
- * Return: n to the factorial
+ * @y: int will the number of time x mutliply itself
+ *
+ * Return: x to the power of y
  */
 
 
