@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * _pow_recursion - make x to the power of y
+ * _sqrt_recursion - make square root of n
  *
- * @x: int will be to the power of y
+ * stat_i - search the root i of n
  *
- * @y: int will the number of time x mutliply itself
+ * @n: int will be square root
  *
- * Return: x to the power of y
+ * @i: the result square root if it exists
+ *
+ * Return: (i) the square root (-1) if there is no sqrt or n negative and 0 for 0
  */
 
 
