@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * factorial - make n to the factorial
+ *
+ * @n: int will be to the factorial
+ *
+ * Return: n to the factorial
+ */
 
 
 int factorial(int n)
