@@ -14,12 +14,12 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	if (argc <= 1)
+	if (argc >= 1)
 	{
 		for (i = 0; argv[i] != argv[argc - 1]; i++)
 		{
 		}
-		printf("%d", i);
+		printf("%d\n", i);
 	}
 
 	return (0);
