@@ -3,9 +3,9 @@
 /**
  * check_prime - check if n is prime
  *
- * @i: number that divise n to know if prime
- *
  * @n: number that we want to know if prime
+ *
+ * @i: number that divise n to know if prime
  *
  * Return: (0) if not prime (1) if it is prime
  */
