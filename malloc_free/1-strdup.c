@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * _strdup - copy an array
@@ -11,14 +12,14 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i = 0;
-	char *p = malloc(sizeof(str) * sizeof(char));
+	unsigned int i = 0, len = strlen(str);
+	char *p = malloc((len + 1) * sizeof(char));
 
 
-	if (sizeof(str) <= 0)
+	if (len <= 0)
 		return (NULL);
 
-	for(i = 0; i <= sizeof(str) + 1; i++)
+	for(i = 0; i < len; i++)
 	{
 		p[i] = str[i];
 	}
