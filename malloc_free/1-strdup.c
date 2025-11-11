@@ -1,6 +1,24 @@
 #include <stdlib.h>
 #include "main.h"
-#include <string.h>
+
+
+/**
+ * _strlen - say the size of a string
+ *
+ * @s: is the string parameter
+ *
+ * Return: (i) the size of s
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != 0; i++)
+	{
+	}
+	return (i);
+}
 
 /**
  * _strdup - copy an array
@@ -12,7 +30,7 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i = 0, len = strlen(str);
+	unsigned int i = 0, len = _strlen(str);
 	char *p = malloc((len + 1) * sizeof(char));
 
 

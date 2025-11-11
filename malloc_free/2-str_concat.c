@@ -1,16 +1,33 @@
 #include <stdlib.h>
 #include "main.h"
-#include <string.h>
+
+/**
+ * _strlen - say the size of a string
+ *
+ * @s: is the string parameter
+ *
+ * Return: (i) the size of s
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != 0; i++)
+	{
+	}
+	return (i);
+}
 
 
 /**
- * create_array - create an array
+ * str_concat - concat two string in an alloc memory
  *
- * @size: is the size of the array created
+ * @s1: first string
  *
- * @c: is the constant variable that will replace all the byte
+ * @s2: second string
  *
- * Return: (ar) the array or (NULL) if the array is void
+ * Return: (p) the concat or (NULL) if the 2 array are void
  */
 
 
@@ -20,8 +37,8 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	i = 0;
 	j = 0;
-	len1 = strlen(s1);
-	len2 = strlen(s2);
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 	p = malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (len1 + len2 <= 0)
