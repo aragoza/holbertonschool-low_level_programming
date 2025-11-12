@@ -8,7 +8,7 @@
  *
  * @height: is the number of row in grid
  *
- * Return: no return because void
+ * no return because void
  */
 
 
@@ -16,7 +16,7 @@
 void free_grid(int **grid, int height)
 {
 
-	while(height != 0)
+	while(height > 0)
 	{
 		height--;
 		free(grid[height]);
