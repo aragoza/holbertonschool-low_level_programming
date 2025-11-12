@@ -8,7 +8,7 @@
  *
  * @height: is the number of column
  *
- * Return: (p) the array or (NULL) if the array is void
+ * Return: (p)
  */
 
 
@@ -18,12 +18,16 @@ int **alloc_grid(int width, int height)
 	int **p;
 
 	if (height <= 0 || width <= 0)
+	{
 		return NULL;
+	}
 
 	p = malloc(height * sizeof(int*));
 
 	if (p == NULL)
+	{
 		return NULL;
+	}
 
 	for (i = 0; i < height; i++)
 	{
@@ -31,10 +35,7 @@ int **alloc_grid(int width, int height)
 
 		if (p[i] == NULL)
 		{
-			for (j = 0; j < i; j++)
-			{
-				free(p[j]);
-			}
+			return (NULL);
 		}
 
 		for (j = 0; j < width; j++)
