@@ -39,9 +39,14 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	if (p == NULL)
 	{
-		free(p);
+		return (NULL);
 	}
 
 	for (i = 0; i < len; i++)
