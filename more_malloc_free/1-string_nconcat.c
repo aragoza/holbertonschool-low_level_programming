@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
 
-
 /**
  * string_nconcat - concat two string in an alloc memory
  *
@@ -13,7 +12,6 @@
  *
  * Return: (p)
  */
-
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -45,24 +43,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	p = malloc((len1 + n + 1) * sizeof(char));
-
 	if (p == NULL)
 	{
 		return (NULL);
 	}
 
-	while (i < len1)
+	for (i = 0; i < len1; i++)
 	{
 		p[i] = s1[i];
-		i++;
 	}
-
-	while (j < len2)
+	for (j = 0; j < len2; j++)
 	{
 		p[i + j] = s2[j];
-		j++;
 	}
-
 	p[i + j] = '\0';
 
 	return (p);
