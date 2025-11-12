@@ -30,19 +30,18 @@ int _strlen(char *s)
 
 char *_strdup(char *str)
 {
-	unsigned int i = 0, len = _strlen(str);
-	char *p = malloc((len + 1) * sizeof(char));
+	unsigned int i = 0, len;
+	char *p;
 
-
-	if (len == 0)
-	{
-		return (NULL);
-	}
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	len = _strlen(str);
+	p = malloc((len + 1) * sizeof(char));
+
 
 	if (p == NULL)
 	{
