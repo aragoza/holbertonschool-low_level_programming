@@ -43,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (p == NULL)
 	{
-		return (NULL);
+		return ("");
 	}
 
 	while (s1[i] != '\0')
@@ -60,6 +60,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	p[i + j] = '\0';
 
+	if (p == NULL)
+	{
+		return (NULL);
+	}
 
 	return (p);
 }
