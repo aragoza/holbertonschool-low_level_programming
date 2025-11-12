@@ -2,13 +2,11 @@
 #include "main.h"
 
 /**
- * str_concat - concat two string in an alloc memory
+ * malloc_checked - allocate memory of b bytes
  *
- * @s1: first string
+ * @b: number of bytes to allocate
  *
- * @s2: second string
- *
- * Return: (p) the concat or (NULL) if the 2 array are void
+ * Return: (p)
  */
 
 
