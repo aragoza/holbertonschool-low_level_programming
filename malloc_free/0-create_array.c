@@ -8,7 +8,7 @@
  *
  * @c: is the constant variable that will replace all the byte
  *
- * Return: (ar) the array or (NULL) if the array is void
+ * Return: (ar)
  */
 
 char *create_array(unsigned int size, char c)
@@ -17,10 +17,14 @@ char *create_array(unsigned int size, char c)
 	char *ar = malloc(size * sizeof(char));
 
 	if (size == 0)
+	{
 		return (NULL);
+	}
 
 	if (ar == NULL)
+	{
 		return (NULL);
+	}
 
 	for(i = 0; i < size; i++)
 	{
