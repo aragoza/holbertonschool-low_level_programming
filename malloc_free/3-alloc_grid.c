@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * create_array - create an array
+ * alloc_grid - allocate memory for an array
  *
- * @size: is the size of the array created
+ * @width: is the length of the array created
  *
- * @c: is the constant variable that will replace all the byte
+ * @height: is the number of column
  *
- * Return: (ar) the array or (NULL) if the array is void
+ * Return: (p) the array or (NULL) if the array is void
  */
 
 
@@ -22,15 +22,29 @@ int **alloc_grid(int width, int height)
 
 	p = malloc(height * sizeof(int*));
 
-	for(i = 0; i < height; i++)
+	if (p == NULL)
+		return NULL;
+
+	for (i = 0; i < height; i++)
 	{
 		p[i] = malloc(width * sizeof(int));
 
-		for(j = 0; j < width; j++)
+		if (p[i] == NULL)
+		{
+			for (j = 0; j < i; j++)
+			{
+				free(p[j]);
+			}
+		}
+
+	}
+
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
 		{
 			p[i][j] = 0;
 		}
-
 	}
 
 	return (p);
