@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * array-iterator - execute the function action on array
+ * array_iterator - execute the function action on array
  *
  * @array: is a an array of element
  * @size: is the size of the array
@@ -10,7 +10,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int i;
+	size_t i;
 
 	if (array == NULL || *action == NULL)
 		return;
