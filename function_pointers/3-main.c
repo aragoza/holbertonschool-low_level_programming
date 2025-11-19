@@ -1,10 +1,9 @@
 #include "3-calc.h"
-#include "3-op_functions.c"
-#include "3-get_op_func.c"
+#include <stdio.h>
 
-int main(argc, argv[])
+int main(int argc, char *argv[])
 {
-    int (*resultat)(int, int)
+    int (*resultat)(int, int);
     int num1, num2;
 
     num1 = atoi(argv[1]);
@@ -16,7 +15,7 @@ int main(argc, argv[])
         exit(98);
     }    
 
-    resultat = get_op_func(argv[2][0])
+    resultat = get_op_func(argv[2]);
     if (resultat == NULL)
     {
         printf("Error\n");
