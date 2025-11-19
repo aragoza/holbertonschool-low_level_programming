@@ -1,0 +1,1 @@
+We will work on the variadic function using static arg and multiple arg
