@@ -5,7 +5,7 @@
  * main - check the number of argument and the error
  *
  * @argc: count the number of arg
- * @argv: stock the argument passed through 
+ * @argv: stock the argument passed through
  *
  * Return: (result) of the calc
  */
