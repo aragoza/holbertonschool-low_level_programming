@@ -1,6 +1,15 @@
 #include "3-calc.h"
 #include <stdio.h>
 
+/**
+ * main - check the number of argument and the error
+ *
+ * @argc: count the number of arg
+ * @argv: stock the argument passed through 
+ *
+ * Return: (result) of the calc
+ */
+
 int main(int argc, char *argv[])
 {
 	int (*resultat)(int, int);
