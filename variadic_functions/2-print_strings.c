@@ -8,32 +8,32 @@
  * @separator: a cont string between two string
  * @n: a const uint the number of element
  *
- *
- *
+ * no return void output
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list list_string;
-	char * string1;
-
-	if (separator == NULL)
-		*separator = "";
+	char *string1;
 
 	va_start(list_string, n);
 
-	for (i = 0; i < (n - 1); i++)
+	for (i = 0; i < n; i++)
 	{
-		string1 = va_arg(list_string, char*);
-		
+		string1 = va_arg(list_string, char *);
+
 		if (string1 == NULL)
-			printf("(nil)%s", separator);
-		
+			printf("(nil)");
 		else
-			printf("%s%s", string1, separator);
+			printf("%s", string1);
+
+		if (separator != NULL && i < n - 1)
+			printf("%s", separator);
+
 	}
-	printf("%s\n", va_arg(list_string, char *));
-	
+
 	va_end(list_string);
+
+	printf("\n");
 }
