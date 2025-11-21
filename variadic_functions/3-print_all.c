@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 				string1 = va_arg(list_all, char *);
 				if (string1 == NULL)
 					printf("(nil)");
-				if (string1)
+				if (string1 != NULL)
 					printf("%s", string1);
 			}
 
