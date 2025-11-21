@@ -18,8 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (separator == NULL)
 	{
-		va_end(list_of_number);
-		return;
+		separator = "";
 	}
 
 	va_start(list_of_number, n);
