@@ -5,4 +5,4 @@ int _putchar(char c);
 
 int sum_them_all(const unsigned int n, ...);
 
-#endif "variadic_functions.h"
+#endif /**end of variadic_functions*/
