@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- *  get_dnodeint_at_index - return the value of the node at a given index
+ *  insert_dnodeint_at_index - add a node at a given index
  *
  * @h: list of type dlistint_t
- * @idx: index of the node we want 
+ * @idx: index of the node we want
+ * @n: the value of n
  *
  * Return: (new_node) the node at the index
  */
@@ -37,7 +38,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	temp = *h;
 
-	while(number_of_node < idx - 1)
+	while (number_of_node < idx - 1)
 	{
 		if (temp == NULL)
 			return (NULL);

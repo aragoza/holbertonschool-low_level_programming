@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *  get_dnodeint_at_index - return the value of the node at a given index
+ * delete_dnodeint_at_index - return the value of the node at a given index
  *
  * @head: list of type dlistint_t
- * @index: index of the node we want 
+ * @index: index of the node we want
  *
  * Return: (1) if work (-1) if fail
  */
@@ -35,7 +35,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 
-	while(temp != NULL && number_of_node < index - 1)
+	while (temp != NULL && number_of_node < index - 1)
 	{
 		number_of_node++;
 		temp = temp->next;
