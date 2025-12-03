@@ -3,6 +3,24 @@
 #include <string.h>
 
 /**
+ * _strlen - say the size of a string
+ *
+ * @s: is the string parameter
+ *
+ * Return: (i) the size of s
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != 0; i++)
+	{
+	}
+	return (i);
+}
+
+/**
  * add_node_end - will append a node at the end of the linked list
  *
  * @head: list of type list_t
@@ -22,7 +40,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	new_node->str = strdup(str);
-	new_node->len = strlen(str);
+	new_node->len = _strlen(str);
 	new_node->next = NULL;
 
 
