@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_list - will print every value stock in every chunck of the list h
+ * print_dlistint - will print every value stock in every chunck of the list h
  *
- * @h: const list of type list_t 
+ * @h: const list of type list_t
  *
  * Return: (number_of_node) the number of node
  */
