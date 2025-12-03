@@ -4,18 +4,18 @@
 /**
  * sum_dlistint - will print every value stock in every chunck of the list h
  *
- * @h: const list of type list_t 
+ * @head: list of type dlistint_t
  *
- * Return: (number_of_node) the number of node
+ * Return: (value) the sum of the value of every node
  */
 
 int sum_dlistint(dlistint_t *head)
 {
-    int value = 0;
+	int value = 0;
 
-	while(head != NULL)
+	while (head != NULL)
 	{
-        value += head->n;
+		value += head->n;
 		head = head->next;
 	}
 
