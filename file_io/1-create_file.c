@@ -4,13 +4,12 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - function that read a text file and display it in the stdout
+ * create_file - function that create a text file
  *
  * @filename: the name of the file
- * @letters: the number of char we want to diplay
+ * @text_content: the string append to the file
  *
- * Return: (letters) the number of char diplay (0) if function failed (-1)
- * if not enough memory
+ * Return: (1) on success (-1) if failed
  */
 
 int create_file(const char *filename, char *text_content)
