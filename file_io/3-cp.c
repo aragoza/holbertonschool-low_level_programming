@@ -45,9 +45,10 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	(r = read(filde_from, buf, 1024))
+	r = read(filde_from, buf, 1024);
 	if (r > 0)
 	{
+		r = read(filde_from, buf, 1024);
 		w = write(filde_to, buf, r);
 		if (r != w)
 		{
