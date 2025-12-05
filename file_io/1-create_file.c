@@ -14,30 +14,30 @@
 
 int create_file(const char *filename, char *text_content)
 {
-    int filde, i;
+	int filde, i;
 
-    if (filename == NULL)
-        return (-1);
+	if (filename == NULL)
+		return (-1);
 
-    filde = open(filename, O_CREAT | O_WRONLY, 0600);
-    if (filde == -1)
-        return (-1);
+	filde = open(filename, O_CREAT | O_WRONLY, 0600);
+	if (filde == -1)
+		return (-1);
 
-    if (text_content != NULL)
-    {
-        i = 0;
+	if (text_content != NULL)
+	{
+		i = 0;
 
-        while (text_content[i] != '\0')
-        {
-            i++;
-        }
+		while (text_content[i] != '\0')
+		{
+			i++;
+		}
 
-        if (write(filde, text_content, i) == -1)
-        {
-            close(filde);
-            return (-1);
-        }
-    }
-    close(filde);
-    return (1);
+		if (write(filde, text_content, i) == -1)
+		{
+			close(filde);
+			return (-1);
+		}
+	}
+	close(filde);
+	return (1);
 }
