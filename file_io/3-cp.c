@@ -5,14 +5,13 @@
 #include <stdio.h>
 
 /**
+ * main - function that apply modification by system call and copy
+ * a file into another
  *
+ * @argc: count the number of argument
+ * @argv: store the argument passed in parameter
  *
- *
- *
- *
- *
- *
- *
+ * Return: (0) on success
  */
 
 int main(int argc, char *argv[])
@@ -46,20 +45,21 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((r = read(filde_from, buf, 1024)) > 0)
+	(r = read(filde_from, buf, 1024))
+	if (r > 0)
 	{
 		w = write(filde_to, buf, r);
 		if (r != w)
-			{
-				dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
-				exit(99);
-			}	
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+			exit(99);
+		}
 	}
 
 	if (r == -1)
 	{
 		dprintf(STDERR_FILENO, "Can't read from file %s", argv[1]);
-		exit(98);	
+		exit(98);
 	}
 
 	if (close(filde_from) == -1)
